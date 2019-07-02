@@ -1,14 +1,21 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>
-      Ionic Blank
+      Elias Kalish
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
   <div class="ion-padding">
-    The world is your oyster.
-    <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will be your guide.</p>
+    A FullStack Software Engineer.
   </div>
+  <ion-button (click)="pressMe()">Press Me</ion-button>
+  <ion-list>
+    <ion-item>
+      <ion-label>Date of Birth</ion-label>
+      <ion-datetime displayFormat="MM/DD/YYYY" [(ngModel)]="myDateOfBirth"></ion-datetime>
+    </ion-item>
+  </ion-list>
+  <ion-button (click)="funAlert()">Fun Alert</ion-button>
 </ion-content>
